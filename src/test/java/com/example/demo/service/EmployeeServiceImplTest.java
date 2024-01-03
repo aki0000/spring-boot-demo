@@ -28,10 +28,12 @@ class EmployeeServiceImplTest {
     @Test
     void test_findById() {
         Employee employee = new Employee();
+        employee.setEmployeeId("0001");
         employee.setEmployeeName("TEST TARO");
         doReturn(employee).when(employeeRepository).selectByEmployeeId("0001");
 
         Employee actual = employeeService.findById("0001");
+        assertThat(actual.getEmployeeId()).isEqualTo("0001");
         assertThat(actual.getEmployeeName()).isEqualTo("TEST TARO");
     }
 
