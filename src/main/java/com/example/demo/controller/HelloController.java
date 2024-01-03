@@ -12,6 +12,7 @@ public class HelloController{
 	 */
 	@RequestMapping("/hello")
 	private String init() {
+
 		return "hello";
 	}
 
