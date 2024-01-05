@@ -2,6 +2,25 @@
 
 This application is for beginer with Spring Boot. It shows employees list on the web applocation.
 
+## Environment
+
+| item | name | version |
+| --- | --- | --- |
+| Language | Java | 11 |
+| Web Framework | Spring Boot | 2.7.17 |
+| Database | Postgres | 16.1 |
+| Others | Sonarqube | 10.3 |
+
+This repository doesn't have dockerfile of Sonarqube. Please download Sonarqube image from official.
+
+## How to setup for the app
+
+First of all, you setup Postgres with container on your local machine.
+
+``` shell
+podman compose up -d
+```
+
 ## How to run
 
 ### Run a demo application
