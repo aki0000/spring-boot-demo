@@ -15,31 +15,15 @@ public class Employee {
         return id;
     }
 
-    public void setId() {
-        this.id = id;
-    }
-
     public String getEmployeeId() {
         return employeeId;
-    }
-
-    public void setEmployeeId() {
-        this.employeeId = employeeId;
     }
 
     public String getEmployeeName() {
         return employeeName;
     }
 
-    public void setEmployeeName() {
-        this.employeeName = employeeName;
-    }
-
     public String getEmployeePassword() {
         return employeePassword;
-    }
-
-    public void setEmployeePassword() {
-        this.employeePassword = employeePassword;
     }
 }
