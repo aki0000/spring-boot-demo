@@ -1,4 +1,4 @@
-package com.example.demo.controoler;
+package com.example.demo.controller;
 
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
