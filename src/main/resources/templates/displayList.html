@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>従業員一覧</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>従業員一覧</h1>
+<table border="1">
+  <tr>
+    <th>従業員ID</th>
+    <th>氏名</th>
+  </tr>
+  <tr th:each="employee:${employeeList}">
+    <td>
+      <a th:href="@{/list/display-list(employeeId=${employee.id})}">
+        <span th:text="${employee.employeeId}"></span>
+      </a>
+    </td>
+    <td>
+      <span th:text="${employee.employeeName}"></span>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
