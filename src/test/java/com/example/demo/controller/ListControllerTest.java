@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +9,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import com.example.demo.controller.ListController;
 import com.example.demo.service.EmployeeServiceImpl;
-import com.fasterxml.jackson.databind.deser.DataFormatReaders.Match;
 
 @WebMvcTest(ListController.class)
 class ListControllerTest {
